@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.equipo-img {
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+.contenedor {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+

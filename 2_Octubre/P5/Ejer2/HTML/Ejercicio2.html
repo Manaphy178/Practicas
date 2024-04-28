@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Ejercicio de formulario que tenga varios campos"
+    />
+    <link rel="stylesheet" href="ASSETS/CSS/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="ASSETS/IMG/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario | Ejer2</title>
+  </head>
+  <body>
+    <form action="#" method="get">
+      <fieldset>
+        <legend><strong>Formulario de Registro</strong></legend>
+        <div>
+          <label for="mail">Correo: </label>
+          <input
+            type="email"
+            name="email"
+            id="mail"
+            placeholder="Correo"
+            required
+          />
+        </div>
+        <div>
+          <label for="pass1">Contraseña</label>
+          <input
+            type="password"
+            name="contraseña"
+            id="pass1"
+            placeholder="Ponga su contraseña"
+            required
+          />
+        </div>
+        <div>
+          <label for="pass2">Repita la contraseña: </label>
+          <input
+            type="password"
+            name="Repeticion Contraseña"
+            id="pass2"
+            placeholder="Repita su contraseña"
+            required
+          />
+        </div>
+        <div>
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Ponga su nombre"
+            required
+          />
+        </div>
+        <div>
+          <label for="apellido">Apellidos</label>
+          <input
+            type="text"
+            name="apellidos"
+            id="apellido"
+            placeholder="Ponga sus apellidos"
+            required
+          />
+        </div>
+        <div>
+          <label for="direccion">Direccion</label>
+          <input
+            type="text"
+            name="Direccion"
+            id="direccion"
+            placeholder="Ponga su direccion"
+          />
+        </div>
+        <div>
+          Quieres recibir Newsletter?
+          <div>
+            <input type="radio" name="si" id="confirmo" value="Si" />
+            <label for="confirmo">Si</label>
+          </div>
+          <div>
+            <input type="radio" name="no" id="deniego" value="No" />
+            <label for="deniego">No</label>
+          </div>
+        </div>
+        <div>
+          <fieldset>
+            <legend><strong>Terminos de privacidad</strong></legend>
+            <div>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
+              repellat modi soluta hic esse est quidem ducimus illum sunt. Odit,
+              expedita eos quo aliquid ea accusamus fuga temporibus illo
+              laboriosam unde beatae odio soluta, dolorem illum vero
+              exercitationem pariatur quia, enim aspernatur quaerat. Itaque
+              placeat tempore asperiores unde rerum dolorem animi, facere
+              corrupti quos cum nemo quod saepe! Perspiciatis consequuntur
+              harum, asperiores distinctio quibusdam, earum cumque, quia quae
+              vel aspernatur sapiente laudantium soluta! Aspernatur fugit
+              delectus iusto ipsam a cum, temporibus molestias incidunt quia
+              obcaecati quisquam odio quibusdam illo ut necessitatibus eius
+              quas, eaque voluptate modi accusamus dolores doloribus quod.
+            </div>
+            <br />
+            <div>
+              <input
+                type="radio"
+                name="acepto"
+                id="acepto"
+                required
+                value="Acepto"
+              />
+              <label for="acepto"
+                ><strong
+                  >Acepto los terminos de privacidad. Tambien acepto a vender mi
+                  alma al diablo</strong
+                ></label
+              >
+            </div>
+          </fieldset>
+        </div>
+        <div>
+          <button type="submit">Enviar</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

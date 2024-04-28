@@ -1,0 +1,19 @@
+div > p:first-child {
+  color: red;
+}
+div#b > p::first-line {
+  color: blue;
+}
+div#b > p::first-letter {
+  color: black;
+}
+a {
+  color: green;
+}
+a:hover {
+  color: blue;
+  background-color: yellow;
+}
+span:lang(en) {
+  color: red;
+}

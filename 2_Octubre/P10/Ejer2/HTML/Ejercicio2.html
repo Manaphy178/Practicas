@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Ejercicio 2 de la practica 10" />
+    <link rel="stylesheet" href="ASSETS/CSS/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="ASSETS/IMG/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2</title>
+  </head>
+  <body>
+    <header>
+      <h1>Joji</h1>
+      <p>
+        George Kusunoki Miller, es un cantautor, musico y productor
+        japonés-australiano
+      </p>
+      <a href="https://jojimusic.com/" target="_blank" rel="noopener noreferrer"
+        ><img
+          src="ASSETS/IMG/joji1680.png"
+          alt="Foto principal de cantante"
+          height="400"
+          width="400"
+          title="Haz click Aquí"
+          srcset="
+            ./ASSETS/IMG/joji400.png   399w,
+            ./ASSETS/IMG/joji1680.png 1680w,
+            ./ASSETS/IMG/joji.png     2004w
+          "
+          sizes="(max-width: 400px) 300px, (max-width: 1600px) 1600px (max-width 2000px) 2000px"
+      /></a>
+    </header>
+    <main>
+      <article>
+        <section id="personajes">
+          <h2>Personajes</h2>
+          <nav>
+            <ul>
+              <li>
+                <a
+                  href="https://es.wikipedia.org/wiki/Joji"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Joji</a
+                >
+              </li>
+              <li>
+                <!-- Este enlace es para la cuenta de YouTube, ambos personajes son la misma persona -->
+                <a
+                  href="https://www.youtube.com/@TVFilthyFrank"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Filthy Frank</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <section id="Discografía">
+          <h2>Discografía</h2>
+          <p>Grandes exitos de Joji</p>
+          <table border="1">
+            <tr>
+              <th>Fecha</th>
+              <th>Albumes</th>
+              <th colspan="2">Canciones destacadas</th>
+            </tr>
+            <tr>
+              <td>Jun/2022</td>
+              <td>SMITHEREENS</td>
+              <td>Glimpse Of Us</td>
+              <td>Die For You</td>
+            </tr>
+            <tr>
+              <td>Sep/2020</td>
+              <td>Nectar</td>
+              <td>Like You Do</td>
+              <td>Ew</td>
+            </tr>
+            <tr>
+              <td>Oct/2018</td>
+              <td>Ballads</td>
+              <td>YEAH RIGHT</td>
+              <td>SLOW DANCING IN THE DARK</td>
+            </tr>
+            <tr>
+              <td colspan="4" style="text-align: center">
+                "SMITHEREENS" es el album mas exitoso
+              </td>
+            </tr>
+          </table>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <h2>Dejanos un comentario</h2>
+      <div>
+        <label for="name">Nombre</label><br />
+        <input
+          type="text"
+          name="Nombre"
+          id="name"
+          required
+          placeholder="Aquí tu nombre"
+        />
+      </div>
+      <div>
+        <label for="mail">Correo Electrónico</label><br />
+        <input
+          type="email"
+          name="Correo"
+          id="mail"
+          required
+          placeholder="Aquí tu correo"
+        />
+      </div>
+      <div>
+        <label for="comen">Danos tu opinion</label> <br />
+        <textarea
+          name="Comentario"
+          id="comen"
+          cols="40"
+          rows="10"
+          required
+        ></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </footer>
+  </body>
+</html>

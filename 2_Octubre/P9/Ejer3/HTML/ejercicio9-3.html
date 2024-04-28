@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ejercicio 3 practica 9" />
+    <link rel="stylesheet" href="ASSETS/CSS/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="ASSETS/IMG/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Ejercicio 3</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bienvenido</h1>
+    </header>
+    <main>
+      <h2>Suscripción Revista</h2>
+      <article>
+        <section>
+          <form action="mailto:alvaro@centronelson.org" method="post">
+            <fieldset>
+              <legend><h3>Introduzca sus datos</h3></legend>
+              <div>
+                <label for="nomape">Nombre y Apellidos</label>
+                <br />
+                <input
+                  type="text"
+                  name="nomape"
+                  id="nomape"
+                  required
+                  pattern="[A-z]"
+                  maxlength="100"
+                  placeholder="Dime tu nombre y apellidos"
+                />
+              </div>
+              <br />
+              <div>
+                <label for="postal">Dirección Postal</label>
+                <br />
+                <input
+                  type="text"
+                  name="postal"
+                  id="postal"
+                  pattern="[A-z] [0-9]"
+                  maxlength="100"
+                  required
+                  placeholder="Dirección Postal"
+                />
+              </div>
+              <br />
+              <div>
+                <label for="num">Número de ejemplares</label>
+                <input
+                  type="number"
+                  name="num"
+                  id="num"
+                  min="1"
+                  max="10"
+                  placeholder="3"
+                />
+              </div>
+              <br />
+              <div>
+                <label for="tipo">Tipo de suscripción</label>
+                <select name="tipo" id="tipo">
+                  <!-- No se como hacer placeholder en un select, lo busque y no encontre nada -->
+                  <option value="">Elija un tipo de suscripción</option>
+                  <option value="Mensual">Mensual</option>
+                  <option value="Trimestral">Trimestral</option>
+                  <option value="Anual">Anual</option>
+                </select>
+              </div>
+              <br />
+              <div>
+                <label for="pago"><strong>Forma de pago</strong></label>
+                <br />
+                <label for="tarjeta">Tarjeta</label>
+                <input type="radio" name="pago" id="tarjeta" value="tarjeta" />
+                <br />
+                <label for="banco">Transferencia Bancaria</label>
+                <input type="radio" name="pago" id="banco" value="banco" />
+                <br />
+                <label for="paypal">Paypal</label>
+                <input type="radio" name="pago" id="paypal" value="paypal" />
+              </div>
+              <br />
+              <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Reiniciar campos</button>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <strong>Mana's web &copy;</strong>
+    </footer>
+  </body>
+</html>

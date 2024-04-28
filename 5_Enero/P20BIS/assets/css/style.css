@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "DM Sans", sans-serif;
+}
+:root {
+  --linksLetra: #91959e;
+  --gris: #cccccc;
+  --asideOptionsBG: #eeeeee;
+  --blanco: #fff;
+  --asideOptionsHover: #444444;
+  --black: #000;
+  --yt:#FF0000;
+  --link:#0000FF;
+  --insta:#FF4500;
+  --projectTitleHover:#008000;
+}
+.layout {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: 1px 1px 10px var(--linksLetra);
+}
+h1 {
+  margin-left: 1rem;
+  font-weight: 900;
+  font-size: 3.5rem;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+.header {
+  height: 11rem;
+  align-items: center;
+  display: flex;
+}
+.header .logo {
+  flex-basis: 65%;
+  font-weight: 900;
+  font-size: 3.5rem;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  flex-grow: 1;
+}
+.logo{
+  font-weight: 900;
+  font-size: 3rem;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  flex-grow: 1;
+}
+.menu {
+  flex-basis: 30%;
+  flex-grow: 1;
+}
+.menu > ul {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-evenly;
+}
+.menu li {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  flex: auto;
+  justify-content: center;
+}
+.menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem;
+  color: var(--linksLetra);
+  font-weight: bold;
+  transition: all 0.4s;
+}
+.menu a:hover {
+  background-color: var(--gris);
+  color: var(--blanco);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--gris);
+}
+h2 {
+  margin-top: 1rem;
+  color: var(--linksLetra);
+  height: 2rem;
+}
+.aside {
+  flex-basis: 15%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aside ul {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0.15rem 0;
+}
+.aside li {
+  display: flex;
+  height: 5rem;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+}
+.aside a {
+  color: var(--linksLetra);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1.4rem;
+  text-align: center;
+  min-width: 95%;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  background-color: var(--asideOptionsBG);
+}
+.aside a:hover {
+  color: var(--blanco);
+  background-color: var(--asideOptionsHover);
+}
+.projects {
+  flex-basis: 75%;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 1rem;
+  gap: 0.6rem;
+}
+
+.project {
+  flex-basis: 25rem;
+  flex-grow: 1;
+  border: 1px solid var(--linksLetra);
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 252px;
+}
+
+.project-info {
+  display: flex;
+  margin: 0.4rem 0 0.5rem 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.project-info a {
+  color: var(--black);
+  text-decoration: none;
+  font-weight: bold;
+  transition: all .5s;
+}
+.project-info a:hover {
+  color: var(--projectTitleHover);
+
+}
+.footer {
+  display: flex;
+  height: 8rem;
+  min-width: 100%;
+  /* border: 1px solid red; */
+  flex-direction: row;
+  align-items: center;
+}
+.footer .logo {
+  /* border: 1px solid red; */
+  order: 3;
+  color: var(--linksLetra);
+  text-align: end;
+  margin-right: 1rem;
+  flex: auto;
+}
+.footer .info {
+  order: 1;
+  color: var(--asideOptionsHover);
+  flex-grow: 1;
+  /* border: 1px solid blue; */
+  margin-left: 1rem;
+}
+.footer .redes-sociales {
+  order: 2;
+  flex-grow: 1;
+display: flex;
+justify-content: center;
+}
+.lista-redes{
+  display: flex;
+  gap: 1rem;
+}
+.social-option {
+  display: flex;
+  flex-direction: row;
+}
+.social-link i{
+  font-size: 1.25rem;
+  color: var(--asideOptionsHover);
+  transition: all .5s;
+}
+.social-link .fa-youtube:hover{
+  color: var(--yt);
+}
+.social-link .fa-linkedin:hover{
+  color: var(--link);
+}
+.social-link .fa-instagram:hover{
+  color: var(--insta);
+}

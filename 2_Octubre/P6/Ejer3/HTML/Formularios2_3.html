@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Ejercicio 3 de FormulariosII" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ASSETS/CSS/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="ASSETS/IMG/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Ejercicio 3</title>
+  </head>
+  <body>
+    <h2>Información sobre el producto</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Datos básicos</legend>
+        <div>
+          <label for="name">Nombre</label>
+          <br />
+          <input type="text" name="nombre" id="name" required size="80" />
+        </div>
+        <br />
+        <div>
+          <label for="desc">Descripción</label>
+          <br />
+          <textarea name="descripcion" id="desc" cols="60" rows="10"></textarea>
+        </div>
+        <br />
+        <div>
+          <label for="foto">Foto</label>
+          <input type="file" name="foto" id="foto" />
+        </div>
+        <br />
+        <div>
+          <input type="checkbox" name="contadorVistas" id="contvisitas" />
+          <label for="contvisitas">Añadir contador de visitas</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Datos económicos</legend>
+        <div>
+          <label for="precio">Precio</label>
+          <input type="number" name="precio" id="precio" max="999" min="1" /> €
+          &emsp;
+          <label for="impuestos">Impuestos</label>
+          <select name="impuestos" id="impuestos">
+            <option value="4">4%</option>
+            <option value="6">6%</option>
+            <option value="8">8%</option>
+            <option value="10">10%</option>
+            <option value="12">12%</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <div>Promoción</div>
+          <input type="radio" name="promocion" id="Ninguno" /><label
+            for="Ninguno"
+            >Ninguno</label
+          ><br />
+          <input type="radio" name="promocion" id="Transporte" /><label
+            for="Transporte"
+            >Transporte gratuito</label
+          ><br />
+          <input type="radio" name="promocion" id="Descuento" /><label
+            for="Descuento"
+            >Descuento 5%</label
+          ><br />
+        </div>
+      </fieldset>
+      <br />
+      <div>
+        <button type="submit">Guardar los cambios</button>
+        <button type="reset">Borrar los datos introducidos</button>
+      </div>
+    </form>
+  </body>
+</html>

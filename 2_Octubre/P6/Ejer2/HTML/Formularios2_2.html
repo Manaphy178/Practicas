@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ejercicio 2 de FormularioII" />
+    <link rel="stylesheet" href="ASSETS/CSS/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="ASSETS/IMG/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Ejercicio 2</title>
+  </head>
+  <body>
+    <form action="#" method="get">
+      <fieldset>
+        <legend>Datos personales</legend>
+        <div>
+          <label for="name">Nombre</label>
+          <br />
+          <input type="text" name="name" id="name" required maxlength="20" />
+        </div>
+        <div>
+          <label for="apellidos">Apellidos</label>
+          <br />
+          <input
+            type="text"
+            name="apellidos"
+            id="apellidos"
+            required
+            maxlength="90"
+          />
+        </div>
+        <div>
+          <label for="dni">DNI</label>
+          <br />
+          <input
+            type="text"
+            name="dni"
+            id="dni"
+            pattern="[0-9] {8} [A-Z]"
+            maxlength="9"
+            size="9"
+          />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Datos de conexión</legend>
+        <div>
+          <label for="username">Nombre de usuario</label>
+          <br />
+          <input type="email" name="username" id="username" required />
+        </div>
+        <div>
+          <label for="password1">Contraseña</label>
+          <br />
+          <input
+            type="password1"
+            name="password1"
+            id="password1"
+            maxlength="10"
+          />
+        </div>
+        <div>
+          <label for="password2">Repite la contraseña</label>
+          <br />
+          <input
+            type="password2"
+            name="password2"
+            id="password2"
+            maxlength="10"
+          />
+        </div>
+      </fieldset>
+      <br />
+      <div>
+        <button type="submit">Guardar los cambios</button>
+        <button type="reset">Borrar los datos introducidos</button>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --sombra: #3a3a3a;
+  --text-h1_h2: #8B2320;
+  --body-back: #f1d2e1;
+  --header-back: #cfcfcfbb;
+  --back-main: #ffffff;
+  --foot-back: #2d2a2a;
+  --url-text: #ff0000;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+/* Fonts */
+h1,
+h2,
+p,
+a {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 50%;
+  background-color: var(--body-back);
+  margin: 0 auto;
+  box-shadow: 0px 3px 20px 0px var(--sombra);
+}
+header {
+  width: 100%;
+  height: 8rem;
+  padding-top: 2.5rem;
+  background-position: center;
+  text-align: center;
+  background-image: url(../IMG/cabecera2.jpg);
+}
+header h1 {
+  background-color: var(--header-back);
+  color: var(--text-h1_h2);
+}
+main {
+  background-color: var(--back-main);
+}
+article {
+  padding: 1rem;
+}
+article h2 {
+  text-align: center;
+  color: var(--text-h1_h2);
+  margin-bottom: 0.5rem;
+}
+article p {
+  margin-bottom: 1rem;
+}
+
+article img {
+  border-radius: 1rem;
+  box-shadow: 0px 3px 20px 0px var(--sombra);
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+footer {
+  background-color: var(--foot-back);
+  padding: 0.25rem;
+}
+footer p {
+  text-align: center;
+  color: var(--back-main);
+}
+
+/* Animaciones */
+a[href*="chocolate"] {
+  color: var(--url-text);
+}
+a[href^="http:"]:hover {
+  font-size: 2rem;
+}
+img[src*="1.jpg"] {
+  transform: scale(1, -1);
+}
+img[src*="2.jpg"] {
+  transition: all 2s;
+}
+img[src*="2.jpg"]:hover {
+  max-width: 35%;
+}
+img[src*="3.jpg"] {
+  animation: anim 5s linear infinite;
+}
+@keyframes anim {
+  0% {
+    transform: rotate(0deg) scale(0.5, 0.5);
+  }
+  50% {
+    transform: rotate(180deg) scale(1, 1);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.5, 0.5);
+  }
+}

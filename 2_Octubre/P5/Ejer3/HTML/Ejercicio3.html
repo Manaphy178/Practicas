@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Ejercicio 3 de solicitud de entrevista" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="ASSETS/IMG/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="ASSETS/CSS/styles.css" />
+    <title>Entrevista | Ejercicio 3</title>
+  </head>
+  <body>
+    <h2>Solicitud de Entrevista</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <div>
+          <fieldset>
+            <legend>
+              <label for="name">Nombre</label>
+            </legend>
+            <input
+              type="text"
+              name="Nombre"
+              id="name"
+              required
+              placeholder=" Nombre de usuario"
+            />
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>
+              <label for="mail">E-mail</label>
+            </legend>
+            <input
+              type="email"
+              name="Correo"
+              id="mail"
+              required
+              placeholder="Direccion de correo"
+            />
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>
+              <label for="DNI">DNI</label>
+            </legend>
+            <input
+              type="text"
+              name="dni"
+              id="DNI"
+              required
+              placeholder="Su DNI"
+              pattern="[0-9] {8} [A-Z]"
+              maxlength="9"
+            />
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>
+              <label for="CV">Curriculum Vitae</label>
+            </legend>
+            <input type="file" name="Curriculum" id="CV" required />
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>
+              <label for="date">Fecha de entrevista: </label>
+            </legend>
+            <input type="date" name="Fecha de entrevista" id="date" required />
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>Experiencia</legend>
+            <input
+              type="checkbox"
+              name="Experiencia"
+              id="Deloitte"
+              value="Deloitte"
+            />
+            <label for="Deloitte">Deloitte </label>
+            <input
+              type="checkbox"
+              name="Experiencia"
+              id="Everis"
+              value="Everis"
+            />
+            <label for="Everis">Everis</label>
+            <input
+              type="checkbox"
+              name="Experiencia"
+              id="Accenture"
+              value="Accenture"
+            />
+            <label for="Accenture">Accenture</label>
+            <input
+              type="checkbox"
+              name="Experiencia"
+              id="Telefónica"
+              value="Telefónica"
+            />
+            <label for="Telefónica">Telefónica</label>
+            <input
+              type="checkbox"
+              name="Experiencia"
+              id="Otras"
+              value="Otras"
+            />
+            <label for="Otras">Otras...</label>
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>
+              <label for="money">Salario</label>
+            </legend>
+            <input
+              type="number"
+              name="Salario"
+              id="money"
+              placeholder="Su salario"
+              max="50000"
+            />
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>Lugar de trabajo</legend>
+            <input type="checkbox" name="Lugar" id="Madrid" value="Madrid" />
+            <label for="Madrid">Madrid </label>
+            <input
+              type="checkbox"
+              name="Lugar"
+              id="Barcelona"
+              value="Barcelona"
+            />
+            <label for="Barcelona">Barcelona </label>
+            <input type="checkbox" name="Lugar" id="Sevilla" value="Sevilla" />
+            <label for="Sevilla">Sevilla </label>
+            <input
+              type="checkbox"
+              name="Lugar"
+              id="Valencia"
+              value="Valencia"
+            />
+            <label for="Valencia">Valencia </label>
+            <input type="checkbox" name="Lugar" id="Bilbao" value="Bilbao" />
+            <label for="Bilbao">Bilbao </label>
+            <input type="checkbox" name="Lugar" id="Otro" value="Otro" />
+            <label for="Otro">Otro... </label>
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>¿Es su primer trabajo de desarrollador de software?</legend>
+            <input type="radio" name="Primera vez" id="si" value="Si" />
+            <label for="si">Si</label>
+            <input type="radio" name="Primera vez" id="no" value="No" />
+            <label for="no">No</label>
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>
+              <label for="comentario">Comentarios o sugerencias</label>
+            </legend>
+            <textarea
+              name="Comentario"
+              id="comentario"
+              cols="50"
+              rows="4"
+            ></textarea>
+          </fieldset>
+        </div>
+        <br />
+        <button type="submit">Enviar</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

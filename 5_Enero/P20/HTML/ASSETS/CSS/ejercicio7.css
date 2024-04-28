@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 320px;
+    background-color: aliceblue;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    background-color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    display: inline-flex;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+ul a{
+    color: black;
+}
+
+.btn{
+    border-radius: 2rem;
+    color: #fff;
+    background-color: blue;
+    padding: .5rem;
+}
+

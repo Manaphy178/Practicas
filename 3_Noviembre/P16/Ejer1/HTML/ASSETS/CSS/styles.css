@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --body-back: #f2f2f2;
+  --borde: #226fc1;
+  --interact: #4fb560;
+  --hover-text: #fff;
+  --borde-back: #ffffff;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--body-back);
+}
+.formulario {
+  width: 25%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border: 1px solid var(--borde-back);
+  border-radius: 0.5em;
+  background-color: var(--borde-back);
+}
+.text,
+.mail {
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 10px;
+  border: 1px solid var(--borde);
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+}
+textarea {
+  min-height: 120px;
+  font-size: 1rem;
+  max-height: 300px;
+  outline: none;
+  border: 1px solid var(--borde);
+  width: 100%;
+}
+input:focus, textarea:focus {
+  border-color: var(--interact);
+}
+.boton {
+  width: 10rem;
+  background-color: var(--borde-back);
+  cursor: pointer;
+  padding: 0.5rem;
+  margin: 0 auto;
+  border: 1px solid var(--interact);
+  color: var(--interact);
+  border-radius: 0.5rem;
+  display: block;
+}
+
+.boton:hover {
+  background-color: var(--interact);
+  color: var(--hover-text);
+}
