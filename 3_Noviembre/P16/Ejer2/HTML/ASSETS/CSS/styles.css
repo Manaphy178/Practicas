@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-boton: #ffd904;
+  --boton-hover: #fee34c;
+  --color-focus: #814718;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+body > * {
+  font-family: "Roboto Mono", monospace;
+}
+h1 {
+  text-align: center;
+}
+.formulario {
+  margin: 0 auto;
+  width: 40vh;
+  padding: 1em;
+}
+input {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 4px;
+  border-radius: 0.2em;
+  border: 2px solid grey;
+  outline: none;
+}
+input[type="submit"] {
+  margin-top: 2em;
+  padding: 1em;
+  background-color: var(--color-boton);
+}
+input[type="submit"]:hover {
+  background-color: var(--boton-hover);
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: var(--color-focus);
+}

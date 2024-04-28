@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contenedor{
+  max-width: 600px;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  min-height: 10rem;
+  height: 10rem;
+  object-fit:cover;
+}
+.profile{
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.profile:last-child{
+  flex-direction: row-reverse;
+}
+.profile:last-child div{
+  text-align: end;
+  align-items: end;
+}
+
+div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-name{
+  margin-bottom: .5rem;
+}
+.profile-role{
+  margin-bottom: 1rem;
+}

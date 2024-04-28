@@ -1,0 +1,61 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1#titulo {
+  color: teal;
+}
+p > strong,
+a,
+th {
+  color: red;
+  font-weight: bold;
+}
+span.destacado {
+  color: orange;
+  font-weight: bold;
+}
+h2#subtitulo,
+a > em {
+  color: blue;
+}
+a:hover {
+  color: black;
+  background-color: yellow;
+}
+span.especial {
+  color: purple;
+  font-weight: bold;
+}
+caption {
+  color: blue;
+  font-weight: bold;
+}
+table,
+tr,
+th,
+td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  padding: 5px;
+}
+td {
+  color: green;
+  font-weight: bold;
+}
+td > em {
+  font-weight: lighter;
+}
+th.especial,
+td > strong {
+  color: orange;
+}
+div#adicional {
+  color: olive;
+}
+p > span#especial {
+  color: fuchsia;
+  font-weight: bold;
+}
+div#adicional > p > a {
+  color: green;
+}

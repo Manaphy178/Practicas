@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --fondo: #092327;
+  --text: white;
+  --body-color: #f9f8fc;
+  --link-hover: #ef8354;
+}
+body {
+  background-color: var(--body-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  width: 90%;
+  background-color: var(--fondo);
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+}
+li {
+  display: inline-block;
+}
+a {
+  padding: 2em;
+  display: block;
+  color: var(--text);
+  text-decoration: none;
+}
+a:hover {
+  background-color: var(--link-hover);
+}

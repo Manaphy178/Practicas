@@ -1,0 +1,15 @@
+div + p {
+  color: green;
+}
+div:lang(en_US) p{
+  color: blue;
+}
+.noticia {
+  color: red;
+}
+div:lang(fr){
+  color: brown;
+}
+div:lang(fr),div:lang(fr_CA) {
+  font-weight: bold;
+}

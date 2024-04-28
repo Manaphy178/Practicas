@@ -1,0 +1,32 @@
+body {
+  font-weight: bold;
+}
+p {
+  color: red;
+}
+.par {
+  color: blue;
+}
+a {
+  color: green;
+}
+#destacado {
+  color: black;
+}
+#destacado a {
+  color: black;
+}
+ul,
+ol {
+  color: blue;
+}
+ol {
+  color: green;
+}
+ul a,
+ol a {
+  color: red;
+}
+ol ol {
+  color: yellow;
+}

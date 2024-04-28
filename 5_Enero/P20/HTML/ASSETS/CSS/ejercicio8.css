@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+h1{
+    text-align: center;
+}
+
+.contenedor{
+    align-self: center;
+    max-width: 44rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.reporte{
+    border-radius: 1.5rem;
+    background-color: aquamarine;
+    min-width: 12rem;
+    max-width: 14rem;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.tipo{
+    font-size: large;
+}
+
+.medida{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.comparar{
+    text-align: center;
+
+}

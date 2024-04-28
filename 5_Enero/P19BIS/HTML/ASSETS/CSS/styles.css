@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --header: #ff0000;
+  --aside: #008000;
+  --article: #ffff00;
+  --footer: #0000ff;
+  --below: #ee82ee;
+}
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Para no borrar codigo y tal he ido comentando codigo segun el ejercicio */
+
+header {
+  background-color: var(--header);
+  height: 25vh;
+}
+aside {
+  background-color: var(--aside);
+  /* height: 30vh; */
+  /* position: fixed; */
+  /* left: 100px;
+  top: 100px;
+  margin: 0 auto;
+  right: 100px; */
+  /* width: 30vh; */
+  z-index: 2;
+  position: sticky;
+  top: 0px;
+  height: 15vh;
+}
+
+article {
+  background-color: var(--article);
+  height: 30vh;
+  position: relative;
+  /* left: 30px; */
+}
+footer {
+  height: 100vh;
+  position: sticky;
+  background-color: var(--footer);
+}
+.belowBlue {
+  background-color: var(--below);
+  height: 20vh;
+}
