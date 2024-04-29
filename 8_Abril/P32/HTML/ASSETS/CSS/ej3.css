@@ -1,0 +1,18 @@
+.color-container {
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: 0.2rem 0.1rem 0.8rem;
+}
+.btn {
+  margin: 1rem auto;
+  display: flex;
+  background-color: rgb(5, 94, 211);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
