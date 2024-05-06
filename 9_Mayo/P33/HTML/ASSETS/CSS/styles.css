@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --fondo: #f2f2f2;
+  --fondoForm: #ffffff;
+  --registrar: #246eb9;
+  --error: #ce1818;
+  --genero: #fdd9b2;
+  --generoSelect: #ffac53;
+}
+body {
+  background-color: var(--fondo);
+}
+.formularioCompleto {
+  margin: 10rem auto;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 1rem;
+  align-content: center;
+  padding: 1rem;
+  background-color: var(--fondoForm);
+  border-radius: 0.35rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.inpt {
+  display: block;
+  border-top: 1rem;
+  border-left: 1rem;
+  border-right: 1rem;
+  border-color: grey;
+  padding-bottom: 0.75rem;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+}
+.inpt:focus-visible {
+  outline-color: blue;
+}
+.generos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.genre {
+  display: none;
+}
+.radLabel {
+  background-color: var(--genero);
+  padding: 0.75rem;
+  color: white;
+  width: 45%;
+  text-align: center;
+}
+/* poner en JS */
+.radLabelCheck {
+  background-color: var(--generoSelect);
+}
+.terminos {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.listaError {
+  background-color: var(--error);
+  padding: 0.75rem;
+  border-radius: 0.4rem;
+  display: none;
+}
+.elementoError {
+  color: white;
+  margin-left: 1rem;
+  display: none;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./ASSETS/CSS/styles.css" />
+    <script defer src="./ASSETS/JS/script.js"></script>
+    <title>Practica 33</title>
+  </head>
+  <body>
+    <form action="#" method="get" class="formularioCompleto">
+      <div class="inputs">
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          class="inpt"
+          placeholder="Nombre"
+          required
+        />
+        <input
+          type="email"
+          name="correo"
+          id="correo"
+          placeholder="Correo"
+          class="inpt"
+          required
+        />
+      </div>
+      <div class="generos">
+        <input type="radio" name="genero" id="Hombre" class="genre" />
+        <label for="Hombre" class="radLabel">Hombre</label>
+        <input type="radio" name="genero" id="Mujer" class="genre" />
+        <label for="Mujer" class="radLabel">Mujer</label>
+      </div>
+      <div class="terminos">
+        <input type="checkbox" name="term" id="term" />
+        <label for="term">Acepto Terminos y Condiciones </label>
+      </div>
+      <ul class="listaError" id="lista">
+        <li class="elementoError" id="errorNombre">
+          Por favor completa el nombre
+        </li>
+        <li class="elementoError" id="errorMail">
+          Por favor completa el correo
+        </li>
+        <li class="elementoError" id="errorSexo">
+          Por favor seleccione el sexo
+        </li>
+        <li class="elementoError" id="errorTerminos">
+          Por favor acepta los terminos y condiciones
+        </li>
+      </ul>
+      <input type="submit" value="Registrarse" class="subm" />
+    </form>
+  </body>
+</html>
