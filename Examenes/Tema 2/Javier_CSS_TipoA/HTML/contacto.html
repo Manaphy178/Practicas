@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./recursos/css/estilo.css" />
+    <title>Examen Tipo A | Contacto</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <h1>Decoraciones Lulu</h1>
+    </header>
+    <main>
+      <form action="registro.php" method="post" class="formulario">
+        <h2 class="contacta">Contactar</h2>
+        <div>
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            class="entrada borde_redondo"
+          />
+        </div>
+        <div>
+          <label for="Apellidos">Apellidos</label>
+          <input
+            type="text"
+            id="Apellidos"
+            name="apellidos"
+            class="entrada borde_redondo"
+          />
+        </div>
+        <div>
+          <label for="correo">Correo Electrónico</label>
+          <input
+            type="email"
+            id="correo"
+            name="correo"
+            class="entrada borde_redondo"
+          />
+        </div>
+        <div>
+          <label for="direccion">Dirección</label>
+          <input
+            type="text"
+            id="direccion"
+            name="direccion"
+            class="entrada borde_redondo"
+          />
+        </div>
+        <div>
+          <label for="info">Mensaje</label>
+          <textarea name="info" id="info" class="entrada borde_redondo">
+          </textarea>
+        </div>
+        <div>
+          <button type="submit" class="borde-redondo" id="boton-aceptar">
+            Enviar tu Mensaje
+          </button>
+        </div>
+      </form>
+    </main>
+    <footer><span>Decoraciones Lulú&copy; ❤</span></footer>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --body: #f2f2f2;
+  --anuncio: #4861df;
+  --anun-text: #575555;
+  --botonBack: #4861df;
+  --shadow: #404040;
+  --blanco: #ffffff;
+}
+body {
+  background-color: var(--body);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.contenedor {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "anuncio"
+    "servicios";
+  justify-items: center;
+  width: 90%;
+  max-width: 1200px;
+  padding: 2rem;
+  gap: 2rem;
+  align-content: center;
+}
+.anuncio {
+  grid-area: anuncio;
+  text-align: center;
+  border-radius: 1rem;
+  gap: 1rem;
+  display: grid;
+  grid-template-rows: auto;
+  align-items: center;
+  align-content: space-evenly;
+  justify-items: center;
+}
+.anuncio h2 {
+  color: var(--anuncio);
+  font-size: 2rem;
+}
+.anuncio p {
+  font-size: 1.5rem;
+  color: var(--anun-text);
+}
+.anuncio .boton {
+  border-radius: 2rem;
+  background-color: var(--botonBack);
+  color: var(--blanco);
+  border: 0px;
+  padding: 1rem;
+  width: 50%;
+  cursor: pointer;
+  font-weight: bold;
+}
+.contenedor-servicios {
+  display: grid;
+  grid-area: servicios;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+}
+.contenedor-servicios .box {
+  background-color: var(--blanco);
+  border-radius: 1rem;
+  min-height: 10rem;
+  padding: 1rem;
+  box-shadow: 2px 2px 7px var(--shadow);
+}
+.box .textos {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding:.5rem;
+  justify-content: space-evenly;
+}
+.textos h3 {
+  color: var(--anuncio);
+  font-size: 1.5rem;
+}
+.textos p {
+  color: var(--anun-text);
+  font-weight: bold;
+  font-style: italic;
+}
+.textos a {
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+}
+@media screen and (min-width: 640px) {
+  .contenedor {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "anuncio servicios servicios";
+  }
+  .contenedor-servicios {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+  .contenedor-servicios .box{
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contenedor {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "anuncio servicios servicios servicios";
+  }
+  .contenedor-servicios {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}

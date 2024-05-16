@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-width: 25%;
+  max-width: 50%;
+  margin: 1rem auto;
+  background-color: antiquewhite;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: white;
+  margin: 10rem auto;
+  padding: 2rem;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+.err {
+  display: none;
+  color: red;
+  margin-left: 1rem;
+}
+.inpt {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding: 0.75rem 0.2rem;
+}
+.btn {
+  background-color: blue;
+  border: 0;
+  color: white;
+  padding: 1rem;
+}

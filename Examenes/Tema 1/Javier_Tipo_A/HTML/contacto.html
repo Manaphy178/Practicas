@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Contactanos para poder contratarte"
+    />
+    <link rel="stylesheet" href="./ASSETS/CSS/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="ASSETS/IMG/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header>
+      <h1>Diseño y creación de páginas Web</h1>
+      <img
+        src="./ASSETS/IMG/encabezado.jpg"
+        alt="Imagen principal de la pagina"
+        height="333"
+        width="500"
+      />
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Contactanos</h2>
+      <form method="post" action="www.servidorlocal.edu/pagina.php">
+        <fieldset>
+          <legend>Formulario de Contratación</legend>
+          <div id="Nombre">
+            <label for="name">Nombre:</label><br />
+            <input
+              type="text"
+              name="Nombre"
+              id="name"
+              maxlength="20"
+              required
+              placeholder="Introduzca su nombre"
+            />
+          </div>
+          <div id="Apellidos">
+            <label for="ape">Apellidos:</label><br />
+            <input
+              type="text"
+              name="Apellidos"
+              id="ape"
+              maxlength="40"
+              required
+              placeholder="Introduzca sus apellidos"
+            />
+          </div>
+          <div id="Cuenta_Bancaria">
+            <label for="bank">Cuenta bancaria:</label><br />
+            <input
+              type="text"
+              name="cuentaBanco"
+              id="bank"
+              pattern="[0-9]{20}"
+              placeholder="Introduzca cuenta bancaria"
+            />
+          </div>
+          <div id="Fecha_inscripcion">
+            <label for="date">Fecha de inscripción</label><br />
+            <input type="date" name="Fecha" id="date" />
+          </div>
+          <div id="Forma_pago">
+            <label for="pago">Forma de pago: </label>
+            <select name="Pago" id="pago">
+              <option value="transferencia">Transferencia</option>
+              <option value="tarjeta">Tarjeta</option>
+              <option value="efectivo">Efectivo</option>
+            </select>
+          </div>
+          <div id="Email">
+            <label for="mail">Correo Electrónico:</label><br />
+            <input
+              type="email"
+              name="Correo"
+              id="mail"
+              placeholder="Introduzca su correo electrónico"
+              required
+              size="30"
+            />
+          </div>
+          <div id="Recibir">
+            <br />
+            <input type="checkbox" name="Newsletter" id="news" checked />
+            <label for="news">¿Recibir Newsletter? </label>
+          </div>
+          <br />
+          <button type="submit">Enviar</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <hr />
+      <ul>
+        <li><strong>Diseño y creación de páginas web&copy;</strong></li>
+        <li><a href="tel:+34654741585">Número de teléfono</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
