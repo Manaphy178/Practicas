@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  max-width: 1092px;
+  /* max-width: 1092px; */
   max-height: 1024px;
   min-width: 1092px;
   min-height: 1024px;
@@ -26,7 +26,6 @@ body {
 .titulo {
   background-color: #88cbc5;
   color: #ffffff;
-  text-align: center;
   padding: 3rem;
   border-radius: 4rem;
 }
