@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1092px;
+  max-height: 1024px;
+  min-width: 1092px;
+  min-height: 1024px;
+  background: #e8f2f1;
+}
+.cabecera {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  padding: 1rem;
+  align-items: center;
+}
+.icono {
+  /* border-radius: 10rem; */
+  object-fit: cover;
+  max-width: 220px;
+  max-height: 158px;
+}
+.titulo {
+  background-color: #88cbc5;
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem;
+  border-radius: 4rem;
+}
+.opciones {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.opcion {
+  text-decoration: none;
+  list-style-type: none;
+  background-color: #88cac6;
+  padding: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #015b5b;
+  font-weight: bold;
+  border-radius: 5rem;
+}
